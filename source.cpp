@@ -39,6 +39,12 @@ int main() {
 		}
 	}
 
+#ifdef _DEBUG
+	for (const auto& student : students) {
+		cout << student.firstName << " " << student.lastName << endl;
+	}
+#endif
+
 	inputFile.close();
 	return 1;
 }
